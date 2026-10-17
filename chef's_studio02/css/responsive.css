@@ -1,0 +1,105 @@
+@import url(font.css);
+
+/* 1000 */
+@media (max-width: 1000px) {
+  .card-list ul {
+    /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
+  }
+}
+
+/*768*/
+@media (max-width: 768px) {
+  header {
+    height: 65px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background-color: aquamarine;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  .menu.show {
+    display: flex;
+    font-weight: 500;
+  }
+
+  .nav {
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  /*메인*/
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: 30px;
+    align-items: flex-start;
+  }
+  .intro-text h2 {
+    font-size: 28px;
+  }
+  .intro-text p {
+    font-size: 15px;
+  }
+
+  .card-list ul {
+    /* grid-template-columns: repeat(2, minmax(0, 1fr)); */
+  }
+}
+
+/*480*/
+@media (max-width: 480px) {
+  .intro-text br {
+    display: block;
+  }
+  .card-list ul {
+    /* grid-template-columns: repeat(2, minmax(0, 1fr)); */
+  }
+  .country p {
+    font-size: 14px;
+  }
+  .card-list h3 {
+    font-size: 16px;
+  }
+  .price {
+    font-size: 16px;
+  }
+}
+
+/*390*/
+
+@media (max-width: 390px) {
+  header {
+    height: 55px;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+  .intro-text h2 {
+    font-size: 33px;
+  }
+  .intro-text p {
+    font-size: 14px;
+  }
+  .filter-btn .filter-btn p {
+    font-size: 14px;
+  }
+  .filter-btn span {
+    display: none;
+  }
+  .filter-btn img {
+    width: 20px;
+  }
+  .card-list ul {
+    /* grid-template-columns: 1fr; */
+  }
+}
