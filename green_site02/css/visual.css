@@ -1,0 +1,48 @@
+.visual {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  /* height: 720px; */
+  max-height: 1080px;
+  min-height: 300px;
+  padding-top: 18%;
+  background-color: #333;
+}
+
+.visual video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+.video-inner h2 {
+  font-size: clamp(28px, 4vw, 120px);
+  /*clamp 자동으로 줄어듬*/
+
+  color: #fff;
+}
+
+.video-inner p {
+  color: #fff;
+  width: 50%;
+  font-size: clamp(12px, 2vw, 18px);
+}
+
+.video-inner a {
+  border: 1px solid #fff;
+  color: #fff;
+
+  display: table;
+  margin-top: 40px;
+  max-width: 300px;
+  min-width: 100px;
+  text-align: center;
+  padding: 1% 0;
+  width: 20%;
+  font-size: clamp(12px, 1vw, 16px);
+}

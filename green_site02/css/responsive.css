@@ -1,0 +1,32 @@
+@media (max-width: 900px) {
+  .nav > li > a {
+    font-size: 16px;
+  }
+}
+
+/* 768 */
+@media (max-width: 768px) {
+  .header-bt .nav {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+    top: 44px;
+    z-index: 100;
+  }
+
+  .news ul li {
+    width: calc((100% - 2%) / 2);
+    padding: 1%;
+  }
+}
+
+/* 390 */
+@media (max-width: 390px) {
+  .news ul li {
+    width: 100%;
+  }
+}

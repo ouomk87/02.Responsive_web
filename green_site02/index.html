@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>green site</title>
+    <link rel="icon" href="images/about-05-1.png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/visual.css" />
+    <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" href="css/news.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <!-- 전체 레이아웃 -->
+    <div class="wrap">
+      <!-- 상단 -->
+      <header class="header">
+        <div class="inner">
+          <!-- header-top -->
+          <div class="header-top">
+            <ul class="util">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">help</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Join</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+            <!--모바일메뉴-->
+            <div class="hamburger" id="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="header-bt">
+            <h1><a href="#">DREEN-A</a></h1>
+            <ul class="nav">
+              <li><a href="#">DEPARTMENT</a></li>
+              <li><a href="#">GALLERY</a></li>
+              <li><a href="#">YOUTUBE</a></li>
+              <li><a href="#">COMMUNITY</a></li>
+              <li><a href="#">LOCATION</a></li>
+            </ul>
+          </div>
+          <!-- header-bt -->
+        </div>
+      </header>
+      <!-- 모바일일때 사이드 메뉴 -->
+      <div class="mobil-menu" id="mobile-menu">
+        <ul>
+          <li><a href="#">DEPARTMENT</a></li>
+          <li><a href="#">GALLERY</a></li>
+          <li><a href="#">YOUTUEB</a></li>
+          <li><a href="#">COMMUNITY</a></li>
+          <li><a href="#">LOCATION</a></li>
+          <li><a href="#">연락처</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">로그린 </a></li>
+        </ul>
+      </div>
+      <div class="overlay"></div>
+      <!-- 비주얼 -->
+      <div class="visual">
+        <video autoplay loop muted>
+          <!--muted음소거-->
+          <source src="images/visual.mp4" type="video/mp4" />
+        </video>
+        <div class="video-inner inner">
+          <h2>INNVATION</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            atque omnis nihil excepturi
+          </p>
+          <a href="#">veiw detail</a>
+        </div>
+      </div>
+      <!-- 뉴스 -->
+      <section class="news">
+        <div class="inner">
+          <h2>recent news</h2>
+          <div>
+            <ul>
+              <li>
+                <div class="img-box">
+                  <img src="images/news1.jpg" alt="new1" />
+                </div>
+                <h3><a href="">Lorem ipsum dolo sit</a></h3>
+                <p>
+                  Lorem ipsum dolo sitLorem ipsum dolo sitLorem ipsum dolo
+                  sitLorem ipsum dolo sitLorem ipsum dolo sitLorem ipsum dolo
+                  sit
+                </p>
+              </li>
+              <li>
+                <div class="img-box">
+                  <img src="images/news2.jpg" alt="new1" />
+                </div>
+                <h3><a href="">Lorem ipsum dolo sit</a></h3>
+                <p>
+                  Lorem ipsum dolo sitLorem ipsum dolo sitLorem ipsum dolo
+                  sitLorem ipsum dolo sitLorem ipsum dolo sitLorem ipsum dolo
+                  sit
+                </p>
+              </li>
+              <li>
+                <div class="img-box">
+                  <img src="images/news3.jpg" alt="new1" />
+                </div>
+                <h3><a href="">Lorem ipsum dolo sit</a></h3>
+                <p>
+                  Lorem ipsum dolo sitLorem ipsum dolo sitLorem ipsum dolo
+                  sitLorem ipsum dolo sitLorem ipsum dolo sitLorem ipsum dolo
+                  sit
+                </p>
+              </li>
+              <li>
+                <div class="img-box">
+                  <img src="images/news4.jpg" alt="new1" />
+                </div>
+                <h3><a href="">Lorem ipsum dolo sit</a></h3>
+                <p>
+                  Lorem ipsum dolo sitLorem ipsum dolo sitLorem ipsum dolo
+                  sitLorem ipsum dolo sitLorem ipsum dolo sitLorem ipsum dolo
+                  sit
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 상품(스와이퍼적용) -->
+      <section class="prodruct">
+        <div class="inner">
+          <h2>PRODUCT</h2>
+          <p>다양한 상품을 경험하세요</p>
+          <!-- 스와이퍼 시작 -->
+          <div class="swiper productSwiper">
+            <div class="swiper-wrapper">
+              <!--슬라이드1  -->
+              <div class="swiper-slide">
+                <img src="images/about-03-1.png" alt="" />
+                <div class="slide-info">
+                  <p>creative Deign</p>
+                  <h3>창의적인 디자인 상품</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/about-05-1.png" alt="" />
+                <div class="slide-info">
+                  <p>creative Deign</p>
+                  <h3>창의적인 디자인 상품</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/draw-cristmas.png" alt="" />
+                <div class="slide-info">
+                  <p>creative Deign</p>
+                  <h3>창의적인 디자인 상품</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/draw-cristmas.png" alt="" />
+                <div class="slide-info">
+                  <p>creative Deign</p>
+                  <h3>창의적인 디자인 상품</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 하단 -->
+    </div>
+  </body>
+</html>

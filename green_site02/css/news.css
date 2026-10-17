@@ -1,0 +1,29 @@
+.news ul li img {
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.news ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+ 
+}
+
+.img-box {
+  height: 180px;
+  overflow: hidden;
+
+  margin-bottom: 20px;
+  position: relative;
+}
+.news ul li {
+  width: calc((100% - 6%) / 4);
+  padding: 1%;
+  background-color: aqua;
+}
+.news ul li p {
+  color: #7f7f7f;
+}

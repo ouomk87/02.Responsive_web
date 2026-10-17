@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Presentation";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-1Thin.woff2")
+    format("woff2");
+  /*font-weight: 100;*/
+  font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Presentation';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  display: block;
+}
+
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* 공통영역 */
+.inner {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+/*모바일메뉴*/
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+}
+
+section {
+  padding: 7% 0;
+}
+section h2 {
+  font-size: clamp(20px, 2vw, 24px);
+
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
