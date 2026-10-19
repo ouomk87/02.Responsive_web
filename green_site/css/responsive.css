@@ -49,6 +49,10 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
+  section .inner {
+    padding: 80px 0;
+  }
 }
 
 /* 390 */
@@ -64,5 +68,9 @@
   }
   .lower {
     margin-top: 20px;
+  }
+  .prodruct .swiper-button-next,
+  .prodruct .swiper-button-prev {
+    display: none;
   }
 }

@@ -1,5 +1,6 @@
 .prodruct {
   background-color: rgb(241, 241, 241);
+  position: relative;
 }
 .prodruct > .inner > p {
   font-size: clamp(14px, 1vw, 16px);
@@ -9,4 +10,32 @@
 .slide-info {
   background-color: #fff;
   padding: 22px;
+}
+.productSwiper {
+  padding-bottom: 50px;
+}
+
+/*페이지네이션*/
+.prodruct .swiper-pagination {
+  bottom: 33px !important;
+  height: 50px !important;
+}
+/*화살표*/
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important;
+  width: 45px;
+  height: 45px;
+  background-color: #235323;
+  border-radius: 50%;
+  padding: 23px;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgb(95, 71, 231) !important;
+  border-radius: 0 !important;
 }
