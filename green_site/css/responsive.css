@@ -1,4 +1,8 @@
 @media (max-width: 900px) {
+  header .header-top ul.util a {
+    font-size: 16px;
+  }
+
   .nav > li > a {
     font-size: 16px;
   }
@@ -6,8 +10,15 @@
 
 /* 768 */
 @media (max-width: 768px) {
-  .header-bt .nav {
+  header .header-bt {
+    margin-top: 17px;
+  }
+  .header-bt ul.nav {
     display: none;
+  }
+  /*로고*/
+  .header-bt h1 {
+    font-size: clamp(23px, 1vw, 32px);
   }
   .hamburger {
     display: flex;
@@ -17,10 +28,26 @@
     top: 44px;
     z-index: 100;
   }
+  /*햄버거 메뉴 클릭시 X변경*/
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .hamburger.active span:nth-child(2) {
+    display: none;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(45deg);
+  }
 
   .news ul li {
     width: calc((100% - 2%) / 2);
     padding: 1%;
+  }
+
+  /*하단*/
+  .upper {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -28,5 +55,14 @@
 @media (max-width: 390px) {
   .news ul li {
     width: 100%;
+  }
+  header .header-top ul.util a {
+    font-size: 13px;
+  }
+  .upper {
+    padding-bottom: 20px;
+  }
+  .lower {
+    margin-top: 20px;
   }
 }

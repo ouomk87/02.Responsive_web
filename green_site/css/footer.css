@@ -1,0 +1,33 @@
+.footer {
+  padding: 8% 0;
+  background-color: #333;
+}
+.upper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #777;
+  padding-bottom: 2%;
+}
+.upper a {
+  color: #888;
+}
+.upper ul {
+  display: flex;
+  gap: 20px;
+}
+.upper ul a {
+  font-size: clamp(18px, 1vw, 22px);
+}
+
+.lower {
+  color: #777;
+  font-size: 12px;
+}
+.lower address {
+  margin: 2% 0 1%;
+}
+.lower p {
+  font-size: 13px;
+}

@@ -6,12 +6,20 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Presentation";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-7Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
 
 @font-face {
-    font-family: 'Presentation';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
-    font-weight: 900;
-    font-display: swap;
+  font-family: "A2z";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-7Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-display: swap;
 }
 
 * {
@@ -56,10 +64,11 @@ a {
 section {
   padding: 7% 0;
 }
+
 section h2 {
-  font-size: clamp(20px, 2vw, 24px);
+  font-size: clamp(20px, 2vw, 40px);
 
   text-align: center;
   font-weight: bold;
-  margin-bottom: 3%;
+  margin-bottom: 2%;
 }

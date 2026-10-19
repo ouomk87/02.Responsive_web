@@ -1,1 +1,12 @@
-.prodruct{background-color: antiquewhite;}
+.prodruct {
+  background-color: rgb(241, 241, 241);
+}
+.prodruct > .inner > p {
+  font-size: clamp(14px, 1vw, 16px);
+  margin-bottom: 3%;
+  text-align: center;
+}
+.slide-info {
+  background-color: #fff;
+  padding: 22px;
+}

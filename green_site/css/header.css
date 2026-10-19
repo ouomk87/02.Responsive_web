@@ -1,39 +1,46 @@
 /* 헤더 */
 .header {
   width: 100%;
+  height: 88px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
-header .util {
+
+/*상단메뉴 로그인부분+햄버거메뉴 박스*/
+header .header-top {
+  margin-top: 20px;
+}
+
+header .header-top ul.util {
   display: flex;
   justify-content: flex-end;
   gap: 20px;
 }
-header .util a {
-  font-size: 13px;
+header .header-top ul.util a {
+  font-size: 15px;
 }
-
-.header-top {
-  margin-top: 20px;
-}
-.header-bt {
+/*상단 메뉴*/
+header .header-bt {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.header-bt a {
-  font-size: 16px;
-  display: block;
-  line-height: 65px;
+/*상단로고*/
+.header-bt h1 {
   font-family: "Presentation";
+  font-size: clamp(30px, 1vw, 32px);
 }
-.header-bt h1 a {
-  font-size: 28px;
-  font-family: "Presentation";
-  font-weight: 500;
-}
-
-.header-bt .nav {
+.header-bt ul.nav {
   display: flex;
   gap: 33px;
   align-items: center;
+}
+.header-bt ul.nav a {
+  display: block;
+  line-height: 65px;
+  font-size: clamp(16px, 1vw, 24px);
 }
 
 /* 모바일일때 사이드메뉴 */
@@ -70,5 +77,12 @@ header .util a {
   height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  display: none;
+
+  opacity: 0;
+  visibility: hidden; /*영역을 안 보이게 하는거*/
+  transition: all 0.3s;
+}
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
 }

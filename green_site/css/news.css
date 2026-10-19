@@ -9,11 +9,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 2%;
- 
 }
 
 .img-box {
-  height: 180px;
+  /* height: 180px; */
+  aspect-ratio: 2/1.3; /*비율*/ /*높이 자동으로 줄어듬*/
   overflow: hidden;
 
   margin-bottom: 20px;
@@ -22,8 +22,29 @@
 .news ul li {
   width: calc((100% - 6%) / 4);
   padding: 1%;
-  background-color: aqua;
+  
 }
 .news ul li p {
   color: #7f7f7f;
+}
+.news li h3 {
+  padding: 2% 0;
+  font-size: clamp(16px, 1vw, 18px);
+
+  /* 말줄임표시 밑에 4개가 다 있어야함 */
+  max-width: 220px;
+  overflow: hidden;
+  /*한줄 말줄임표시*/
+  white-space: nowrap; /*넘치지 않게*/
+  text-overflow: ellipsis; /*... 표시*/
+}
+.news li p {
+  /* 최소12px.  ,최대 */
+  font-size: clamp(12px, 1vw, 16px);
+  /* 두줄 말 줄임 */
+  overflow: hidden;
+  /* 여러말줄임 기능을 사용하기 위한 레이아웃 설정 */
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* 몇개? */
+  -webkit-box-orient: vertical; /* 방향? */
 }
